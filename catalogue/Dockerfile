@@ -5,4 +5,5 @@ COPY *.js .
 RUN npm install
 ENV MONGO="true" \
     MONGO_URL="mongodb://mongodb:27017/catalogue"
+WORKDIR /opt/server
 CMD ["node","server.js"]
